@@ -1,0 +1,32 @@
+{
+  "name": "calc_backend",
+  "version": "1.0.0",
+  "description": "Backend for calc",
+  "main": "src/app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dfhffgjf/calc_backend.git"
+  },
+  "author": "Titov Maxim",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.21",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "mathjs": "^10.4.0",
+    "module-alias": "^2.2.2",
+    "nodemon": "^2.0.15",
+    "socket.io": "^4.4.1",
+    "ts-node": "^10.7.0"
+  },
+  "_moduleAliases": {
+    "@services": "./src/services",
+    "@routes": "./src/routes",
+    "@controllers": "./src/controllers"
+  }
+}
